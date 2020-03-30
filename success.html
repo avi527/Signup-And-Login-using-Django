@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sucess</title>
+</head>
+<body>
+<p>User<b>{{user.username}}</b> is loggedin successfully</p>
+<form method="post" action="/user_logout/">
+	{% csrf_token %}
+	<input type="submit" value="Logout">
+</form>
+</body>
+</html>
